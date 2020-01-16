@@ -1,0 +1,63 @@
+.wrapper-product .sta_block-title>div{
+	display: flex;
+}
+.wrapper-product h1.sta_title{
+	border-bottom: 2px solid #bb8636;
+	text-align: left;
+	flex-grow: 1;
+	margin-right: 20px;
+}
+div.sta_see-all{
+	width: 150px;
+	height: 60px;
+	position: relative;
+}
+div.sta_see-all a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	white-space: nowrap;
+}
+.line{
+	background-color: #bb8636;
+	position: absolute;
+}
+.line-top, .line-bottom{
+	width: 100px;
+	height: 2px;
+}
+.line-left, .line-right{
+	width: 2px;
+	height: 50px;
+}
+.line-top{
+	top: 10px;
+	left: 0;
+}
+.line-bottom{
+	bottom: 10px;
+	right: 0;
+}
+.line-left{
+	top: 0;
+	left: 10px;
+}
+.line-right{
+	bottom: 0;
+	right: 10px;
+}
+
+.wrapper-product .container{
+	position: relative;
+	z-index: 100;
+}
+.sta_product-cate{
+	background: #fef8ef;
+}
+@media (max-width: 575px){
+	.sta_see-all{
+		width: 120px !important;
+		height: 50px !important;
+	}
+}

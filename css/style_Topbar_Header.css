@@ -1,0 +1,272 @@
+@font-face {
+	font-family: Roboto;
+	src: url(fonts/roboto.regular.ttf);
+	font-style: normal;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #333;
+	font-family: Roboto, san-serif;
+}
+img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+a, button{
+	transition: all 0.3s;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+}
+@media (max-width: 991px) {
+	.container{
+		max-width: 100% !important;
+	}
+}
+/*sta_topbar*/
+.sta_topbar{
+	background-color: #362204;
+	padding: 10px 0;
+}
+.sta_wrapper-options{
+	display: flex;
+	padding: 22px 0;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+.sta_form-search, .sta_telephone, .sta_contact{
+	position: relative;
+	height: fit-content;
+}
+.sta_telephone, .sta_contact{
+	padding: 7px 0 7px 20px;
+}
+.sta_telephone span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff200;
+}
+.sta_form-search input{
+	border: 1px solid #fff200;
+	border-radius: 18px;
+	height: 36px;
+	width: 300px;
+	padding-left: 20px;
+}
+.sta_form-search button{
+	position: absolute;
+	right: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+	border:0;
+	background-color: transparent;
+}
+img.sta_img-contact{
+	width: 20px;
+}
+.sta_contact ul li{
+	display: inline-block;
+	padding: 0 5px;
+}
+@media (max-width: 991px) {
+	.sta_form-search input{
+		width: initial;
+	}
+}
+/*end sta_topbar*/
+
+/*header*/
+header{
+	background-color: #bb8636;
+}
+header nav {
+	padding: 0;
+}
+header li.nav-item{
+	padding: 0 40px 0 0;
+	white-space: nowrap;
+}
+header li.nav-item *{
+	color: #fff !important;
+}
+header a.nav-link:hover{
+	color: #fffd63 !important;
+}
+header li.nav-item i{
+	padding-right: 5px;
+}
+header a.sta_title-menu{
+	padding: 0 !important;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+@media (max-width: 991px) and (min-width: 768px){
+	header li.nav-item{
+		padding: 0 10px 0 0;
+	}
+}
+/*end header*/
+
+/*menu-modal*/
+.wrapper-modal-button{
+	display: none;
+}
+.fade{
+	transition: all 0.3s ease;
+}
+.fade:not(.show) .modal-content{
+	top: 0;
+	left: -320px;
+}
+.fade.show .modal-content{
+	top: 0;
+	left: 0px;
+}
+.modal.fade .modal-dialog{
+	transform: none;
+}
+.modal-header{
+	border: 0;
+	padding-right: 1.5rem;
+}
+.modal-dialog{
+	margin: 0;
+	width:320px;
+	height: 100%;
+}
+.modal-content{
+	height: 100%;
+	border-radius: 0;
+	border: 0;
+	overflow-y: scroll;
+	transition: left 1s ease;
+}
+.modal-footer{
+	border-top: 0;
+	margin-top: 25px;
+	justify-content: center;
+}
+.modal-body{
+	padding: 0;
+}
+.sta_social-media li{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+
+#sta_menu-modal .have-angle-down:after{
+	padding-left: 10px;
+	font-family: 'FontAwesome';
+	content: "\f107";
+	font-size: 18px;
+	float: right;
+}
+#sta_menu-modal .title-sub-menu{
+	text-transform: uppercase;
+	font-size: 12.75px;
+	color: #333;
+}
+.btn-close span{
+	font-size: 20px;
+}
+ul.content-modal a:hover{
+	color: #fcb941;
+}
+ul.content-modal{
+	padding-left: 35px;
+}
+ul.content-modal li{
+	line-height: 30px;
+}
+ul.content-modal li a{
+	color: #777;
+	font-size: 12.75px;
+}
+
+.nav-tab-title.active, 
+.nav-tab-title:hover{
+	color: #fcb941 !important;
+	border-bottom: 2px solid #fcb941 !important;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+}
+.nav-tab-title{
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	font-family: 'Poppins', sans-serif !important;
+	text-transform: uppercase;
+}
+.modal-body .nav-link{
+	line-height: 40px;
+	border-bottom: 1px solid #e8e8e8;
+	font-size: 12.75px;
+	padding: 0 21.25px !important;
+	color: #333;
+}
+@media (max-width: 767px) {
+	.wrapper-modal-button{
+		display: block;
+		margin-left: 10px;
+		margin-right: 10px;
+		height: fit-content;
+	}
+	.sta_wrapper-logo{
+		height: 50px;
+	}
+	.sta_wrapper-logo img{
+		height: 100%;
+		object-fit: contain;
+	}
+	.sta_wrapper-options{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.sta_telephone, .sta_contact{
+		display: none;
+	}
+	header{
+		display: none;
+	}
+	.modal input{
+		width: 100%;
+		background-color: burlywood;
+	}
+	.modal-content{
+		/*background-color: #5d431b;*/
+	}
+	.modal-content .nav-link{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.modal-footer li{
+		background-color: #87CBE8;
+		position: relative;
+		margin: 0 2px;
+		display: block;
+	}
+	.modal-footer li a{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.modal-footer ul{
+		display: flex;
+	}
+}
+@media (max-width: 575px) {
+	.sta_form-search{
+		display: none;
+	}
+}
+/*end menu-modal*/

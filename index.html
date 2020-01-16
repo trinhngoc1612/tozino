@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tozino</title>
+	<meta charset="utf-8">
+	<meta name="viewport", content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.min.css">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style_Topbar_Header.css">
+	<link rel="stylesheet" type="text/css" href="css/style_Banner.css">
+	<link rel="stylesheet" type="text/css" href="css/style_Treatment.css">
+	<link rel="stylesheet" type="text/css" href="css/style_HotProduct.css">
+	<link rel="stylesheet" type="text/css" href="css/style_Product.css">
+	<link rel="stylesheet" type="text/css" href="css/style_News.css">
+	<link rel="stylesheet" type="text/css" href="css/style_Bottombar.css">
+
+</head>
+<body>
+
+<div class="sta_topbar">
+	<div class="container">
+		<div class="row">
+			<div class="sta_wrapper-logo col-auto">
+				<img src="images/logo.png" alt="logo">
+			</div>
+
+			<div class="sta_wrapper-options col-auto">
+				<div class="sta_form-search">
+					<input type="text" name="search" placeholder="Tìm kiếm">
+					<button><i class="fa fa-search"></i></button>
+				</div>
+
+				<div class="wrapper-modal-button">
+					<button type="button" class="btn btn-primary" id="sta_btn-menu-modal" data-toggle="modal" data-target="#sta_menu-modal">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div> 
+
+				<div class="sta_telephone">
+					<a href="#">
+						<img class="sta_img-contact" src="images/phoneheader.png">
+						<span>0865.93.6666</span>
+					</a>
+				</div>
+
+				<div class="sta_contact">
+					<ul>
+						<li><a href="#"><img class="sta_img-contact" src="images/facebook.png"></a></li>
+						<li><a href="#"><img class="sta_img-contact" src="images/email.png"></a></li>
+						<li><a href="#"><img class="sta_img-contact" src="images/email.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <!-- end sta_topbar -->
+
+<header>
+	<nav class="container navbar navbar-expand-md navbar-light" >
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#"><i class="fas fa-home"></i>trang chủ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#">đệm</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#">chăn ga gối</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#">tin tức</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#">khuyến mãi</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#">liên hệ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#">giỏ hàng</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sta_title-menu" href="#">đăng nhập</a>
+			</li>
+		</ul>
+	</nav>
+</header> <!-- end header -->
+
+<div class="modal fade" id="sta_menu-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div><!-- end modal-header  -->
+
+			<div class="sta_form-search">
+				<input type="text" name="search" placeholder="Tìm kiếm">
+				<button><i class="fa fa-search"></i></button>
+			</div>
+
+			<div class="modal-body">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#"><i class="fas fa-home"></i>trang chủ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#">đệm</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#">chăn ga gối</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#">tin tức</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#">khuyến mãi</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#">liên hệ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#">giỏ hàng</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link sta_title-menu" href="#">đăng nhập</a>
+					</li>
+				</ul>
+
+				<!--   modal-footer   -->
+				<div class="modal-footer">
+					<ul class="sta_social-media">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="#"><i class="fas fa-phone-alt"></i></a></li>
+						<li><a href="#"><i class="fas fa-envelope"></i></a></li>
+						<li><a href="#"><i class="fas fa-camera-retro"></i></a></li>
+					</ul>
+				</div> <!-- end modal-footer -->
+			</div><!--  end modal-body   -->
+		</div><!-- end modal-content -->
+	</div> <!-- end modal-dialog -->
+</div><!--   end menu modal   -->
+
+<div class="sta_banner">
+	<div id="sta_slider-banner" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#sta_slider-banner" data-slide-to="0" class="active"></li>
+	    <li data-target="#sta_slider-banner" data-slide-to="1"></li>
+	    <li data-target="#sta_slider-banner" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="images/banner.png" class="d-block w-100" alt="banner">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/banner.png" class="d-block w-100" alt="banner">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/banner.png" class="d-block w-100" alt="banner">
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev carousel-control" href="#sta_slider-banner" role="button" data-slide="prev">
+	    <i class="fas fa-angle-left"></i>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next carousel-control" href="#sta_slider-banner" role="button" data-slide="next">
+	    <i class="fas fa-angle-right"></i>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+</div> <!-- end sta_banner -->
+
+<div class="sta_treatment">
+	<img class="sta_treatment-bg" src="images/bg.png">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-12">
+				<div class="card">
+					<div class="card-img"><img src="images/shippingcar.png"></div>
+					<div class="card-body">
+						<div class="card-title">giao hàng nhanh chóng</div>
+						<div class="card-text">Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-12">
+				<div class="card">
+					<div class="card-img"><img src="images/shippingcar.png"></div>
+					<div class="card-body">
+						<div class="card-title">giao hàng nhanh chóng</div>
+						<div class="card-text">Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-12">
+				<div class="card">
+					<div class="card-img"><img src="images/shippingcar.png"></div>
+					<div class="card-body">
+						<div class="card-title">giao hàng nhanh chóng</div>
+						<div class="card-text">Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <!-- end sta_treatment -->
+
+<div class="sta_hot-product ">
+
+	<div class="container">
+		<div class="sta_block-title">
+			<div>
+				<h1 class="sta_title"><a href="#">sản phẩm nổi bật</a></h1>
+			</div>
+			<p class="sta_short-describe">While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.</p>
+		</div>
+
+		<ul class="nav nav-tabs" role="tablist">
+	   	<li class="nav-item">
+	      <a class="nav-link active" id="sta_tab-new" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">Sản phẩm mới</a>
+	   	</li>
+	   	<li class="nav-item">
+	      <a class="nav-link " id="sta_tab-bestsale" data-toggle="tab" href="#bestsale" role="tab" aria-controls="bestsale" aria-selected="false">Bán chạy nhất</a>
+	   	</li>
+	   	<li class="nav-item">
+	      <a class="nav-link " id="sta_tab-topreview" data-toggle="tab" href="#topreview" role="tab" aria-controls="topreview" aria-selected="false">Được đánh giá cao</a>
+	   	</li>
+		</ul>
+
+		<div class="tab-content" id="sta_myTabContent">
+		  <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="sta_tab-new">
+		  	<div class="owl-carousel owl-theme owl-loaded sta_product-slider">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+						</div>
+					</div>
+				</div> <!-- end owl-carousel -->
+		  </div> <!-- end tab-new -->
+
+		  <div class="tab-pane fade " id="bestsale" role="tabpanel" aria-labelledby="sta_tab-bestsale">
+				<div class="owl-carousel owl-theme owl-loaded sta_product-slider">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+						</div>
+					</div>
+				</div> <!-- end owl-carousel -->
+		  </div><!-- end tab-bestsale -->
+
+		  <div class="tab-pane fade " id="topreview" role="tabpanel" aria-labelledby="sta_tab-topreview">
+				<div class="owl-carousel owl-theme owl-loaded sta_product-slider">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+
+							<div class="owl-item sta_product-item">
+								<div class="sta_item-img">
+									<img src="images/product1.jpg">
+								</div>
+								<div class="sta_item-content">
+									<h3><a href="#">set chăn, ga gối lụa</a></h3>
+									<p>Kích thước:</p>
+								</div>
+							</div> <!-- end sta_product-item -->
+						</div>
+					</div>
+				</div> <!-- end owl-carousel -->
+		  </div> <!-- end tab-topreview -->
+
+		</div> <!--  end tab-content  -->
+
+	</div>
+</div>
+
+<div class="wrapper-product sta_product-tozino">
+	<div class="container">
+		<div class="sta_block-title">
+			<div>
+				<h1 class="sta_title"><a href="#">đệm tozino</a></h1>
+				<div class="sta_see-all">
+					<a href="#">xem tất cả</a>
+					<div class="line line-top"></div>
+					<div class="line line-bottom"></div>
+					<div class="line line-left"></div>
+					<div class="line line-right"></div>
+				</div>
+			</div>
+			<p class="sta_short-describe">Having either linking construct, as others have said, is fine for linking. However, for SEO purposes, you should keep the anchor text clean so Google can interpret the anchor better and assign the appropriate relevance.</p>
+		</div>
+		<div class="row">
+			<div class="col-6 col-sm-4 col-lg-4">
+				<div class="sta_product-item">
+					<div class="sta_item-img">
+						<img src="images/product1.jpg">
+					</div>
+					<div class="sta_item-content">
+						<h3><a href="#">set chăn, gam gối lụa</a></h3>
+						<p>Kích thước:</p>
+					</div>
+				</div> <!-- end sta_product-item -->
+			</div>
+
+			<div class="col-6 col-sm-4 col-lg-4">
+				<div class="sta_product-item">
+					<div class="sta_item-img">
+						<img src="images/product1.jpg">
+					</div>
+					<div class="sta_item-content">
+						<h3><a href="#">set chăn, gam gối lụa</a></h3>
+						<p>Kích thước:</p>
+					</div>
+				</div> <!-- end sta_product-item -->
+			</div>
+
+			<div class="col-6 col-sm-4 col-lg-4">
+				<div class="sta_product-item">
+					<div class="sta_item-img">
+						<img src="images/product1.jpg">
+					</div>
+					<div class="sta_item-content">
+						<h3><a href="#">set chăn, gam gối lụa</a></h3>
+						<p>Kích thước:</p>
+					</div>
+				</div> <!-- end sta_product-item -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper-product sta_product-cate">
+	<img class="sta_treatment-bg" src="images/bg.png">
+	<div class="container">
+		<div class="sta_block-title">
+			<div>
+				<h1 class="sta_title"><a href="#">chăn ga gối</a></h1>
+				<div class="sta_see-all">
+					<a href="#">xem tất cả</a>
+					<div class="line line-top"></div>
+					<div class="line line-bottom"></div>
+					<div class="line line-left"></div>
+					<div class="line line-right"></div>
+				</div>
+			</div>
+			<p class="sta_short-describe">Having either linking construct, as others have said, is fine for linking. However, for SEO purposes, you should keep the anchor text clean so Google can interpret the anchor better and assign the appropriate relevance.</p>
+		</div>
+		<div class="row">
+			<div class="col-6 col-sm-4 col-lg-4">
+				<div class="sta_product-item">
+					<div class="sta_item-img">
+						<img src="images/product1.jpg">
+					</div>
+					<div class="sta_item-content">
+						<h3><a href="#">set chăn, gam gối lụa</a></h3>
+						<p>Kích thước:</p>
+					</div>
+				</div> <!-- end sta_product-item -->
+			</div>
+
+			<div class="col-6 col-sm-4 col-lg-4">
+				<div class="sta_product-item">
+					<div class="sta_item-img">
+						<img src="images/product1.jpg">
+					</div>
+					<div class="sta_item-content">
+						<h3><a href="#">set chăn, gam gối lụa</a></h3>
+						<p>Kích thước:</p>
+					</div>
+				</div> <!-- end sta_product-item -->
+			</div>
+
+			<div class="col-6 col-sm-4 col-lg-4">
+				<div class="sta_product-item">
+					<div class="sta_item-img">
+						<img src="images/product1.jpg">
+					</div>
+					<div class="sta_item-content">
+						<h3><a href="#">set chăn, gam gối lụa</a></h3>
+						<p>Kích thước:</p>
+					</div>
+				</div> <!-- end sta_product-item -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="sta_news">
+	<div class="container">
+		<div class="sta_block-title">
+			<div>
+				<h1 class="sta_title"><a href="#">tin tức</a></h1>
+			</div>
+			<p class="sta_short-describe">While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.</p>
+		</div>
+
+		<div class="owl-carousel owl-theme owl-loaded sta_news-slider">
+			<div class="owl-stage-outer">
+				<div class="owl-stage">
+					<div class="owl-item sta_item-news">
+						<div class="sta_item-img">
+							<img src="images/product1.jpg">
+							<div class="sta_datetime">
+								<div class="sta_date">25</div>
+								<div class="sta_month">nov</div>
+							</div>
+						</div>
+
+						<div class="sta_item-content">
+							<h3><a href="#">carousels support</a></h3>
+							<h4>
+								<i class="fas fa-calendar-alt"></i>
+								<span>November 25,2016</span>
+								<i class="far fa-comment-alt"></i>
+								<span>0</span>
+							</h4>
+							<p>While carousels support previous/next controls and indicators, they’re not explicitly required.</p>
+						</div>
+					</div>
+					<div class="owl-item sta_item-news">
+						<div class="sta_item-img">
+							<img src="images/product1.jpg">
+							<div class="sta_datetime">
+								<div class="sta_date">25</div>
+								<div class="sta_month">nov</div>
+							</div>
+						</div>
+
+						<div class="sta_item-content">
+							<h3><a href="#">carousels support</a></h3>
+							<h4>
+								<i class="fas fa-calendar-alt"></i>
+								<span>November 25,2016</span>
+								<i class="far fa-comment-alt"></i>
+								<span>0</span>
+							</h4>
+							<p>While carousels support previous/next controls and indicators, they’re not explicitly required.</p>
+						</div>
+					</div>
+					<div class="owl-item sta_item-news">
+						<div class="sta_item-img">
+							<img src="images/product1.jpg">
+							<div class="sta_datetime">
+								<div class="sta_date">25</div>
+								<div class="sta_month">nov</div>
+							</div>
+						</div>
+
+						<div class="sta_item-content">
+							<h3><a href="#">carousels support</a></h3>
+							<h4>
+								<i class="fas fa-calendar-alt"></i>
+								<span>November 25,2016</span>
+								<i class="far fa-comment-alt"></i>
+								<span>0</span>
+							</h4>
+							<p>While carousels support previous/next controls and indicators, they’re not explicitly required.</p>
+						</div>
+					</div>
+					<div class="owl-item sta_item-news">
+						<div class="sta_item-img">
+							<img src="images/product1.jpg">
+							<div class="sta_datetime">
+								<div class="sta_date">25</div>
+								<div class="sta_month">nov</div>
+							</div>
+						</div>
+
+						<div class="sta_item-content">
+							<h3><a href="#">carousels support</a></h3>
+							<h4>
+								<i class="fas fa-calendar-alt"></i>
+								<span>November 25,2016</span>
+								<i class="far fa-comment-alt"></i>
+								<span>0</span>
+							</h4>
+							<p>While carousels support previous/next controls and indicators, they’re not explicitly required.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end owl-carousel -->
+
+	</div>
+</div>
+
+<div class="sta_bottombar">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div><img src="images/logo.png"></div>
+				<p>While carousels support previous/next controls and indicators, they’re not explicitly required.</p>
+				<div class="sta_social-media">
+					
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-sm-6 col-12">
+				<h3>Hỗ trợ khách hàng</h3>
+				<ul>
+					<li><a href="#">Hướng dẫn thanh toán</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-3 col-sm-6 col-12">
+				<h3>Thông tin liên hệ</h3>
+				<p>While carousels support previous/next controls and indicators</p>
+				<ul>
+					<li><a href="#">Hướng dẫn thanh toán</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+					<li><a href="#">Hướng dẫn</a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-3 col-sm-6 col-12">
+				<h3>Mạng xã hội</h3>
+				<iframe src="http://webcoban.vn/css/default.html"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="sta_footer-more">
+			<div class="sta_footer-menu">
+				<ul>
+					<li><a href="#">trang chủ</a></li>
+					<li><a href="#">giới thiệu</a></li>
+					<li><a href="#">nội thất phòng ngủ</a></li>
+					<li><a href="#">nội thất phòng khách</a></li>
+					<li><a href="#">nội thất phòng ăn</a></li>
+					<li><a href="#">cửa gỗ</a></li>
+					<li><a href="#">liên hệ</a></li>
+				</ul>
+			</div>
+			<div class="sta_footer-copyright">Copyright@2019</div>
+		</div>
+
+		<div class="sta_footer-support">Hotline kĩ thuật: 01234.567.980</div>
+	</div>
+</footer>
+
+<script src="jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="bootstrap4/js/popper.min.js"></script>
+<script src="bootstrap4/js/bootstrap.min.js"></script>
+<script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	$('.sta_product-slider').owlCarousel({
+		loop: true,
+		margin:20,
+		nav: true,
+		navText: ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
+		dots: false,
+		responsive: {
+			0:{
+				items:1
+			},
+			425:{
+				items:2
+			},
+			576:{
+				items:3
+			},
+
+			768:{
+				items: 4
+			}
+		}
+	});
+	$('.sta_news-slider').owlCarousel({
+		loop: true,
+		margin:20,
+		nav: true,
+		navText: ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
+		items: 3,
+		dots: false,
+		responsive: {
+			0:{
+				items:1
+			},
+			425:{
+				items:2
+			},
+			576:{
+				items:3
+			}
+		}
+	});
+</script>
+</body>
+</html>

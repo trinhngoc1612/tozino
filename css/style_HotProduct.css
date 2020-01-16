@@ -1,0 +1,85 @@
+.sta_hot-product{
+	background-color: #fef8ef;
+}
+.sta_hot-product .container{
+	position: relative;
+	z-index: 100;
+}
+.sta_hot-product .nav-tabs{
+	justify-content: center;
+	border: 0;
+}
+.sta_hot-product .nav-link{
+	color: #333;
+	font-weight: bold;
+}
+.sta_hot-product .nav-link.active{
+	color: #bb8636;
+	border:0;
+	background: transparent;
+	border-bottom: 1px solid #bb8636;
+}
+.sta_block-title{
+	text-align: center;
+	padding-top: 30px;
+}
+.sta_block-title>div *{
+	text-transform: uppercase;
+	color: #bb8636;
+	font-weight: bold;
+}
+.sta_block-title h1 a{
+	font-size: 24px;
+}
+.sta_block-title p{
+	font-size: 16px;
+	padding: 20px 50px 0;
+
+}
+@media (max-width: 575px) {
+	.sta_block-title h1 a {
+    	font-size: 20px;
+ 	}
+	.sta_block-title p{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+/*end sta_block-title*/
+
+/*sta_product-item*/
+.sta_item-content h3 a{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #bb8636;
+	font-weight: bold;
+}
+.sta_product-item p{
+	color: #5c5c5c;
+}
+.sta_item-content{
+	padding: 20px 0;
+}
+/*end sta_product-item*/
+
+.owl-carousel{
+	position: relative;
+}
+.owl-carousel button{
+	position: absolute;
+	top: 40%;
+	background-color: #fff !important;
+	margin: 0 !important;
+	opacity: 1 !important;
+	border: 1px solid #fff;
+	border-radius: 50% !important;
+	width: 30px;
+	height: 30px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.owl-carousel button.owl-prev{
+	left: -15px !important;
+}
+.owl-carousel button.owl-next{
+	right: -15px !important;
+}

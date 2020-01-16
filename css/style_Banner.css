@@ -1,0 +1,35 @@
+.sta_banner ol.carousel-indicators li{
+	width: 14px;
+	height: 14px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+.sta_banner a i{
+	font-size: 24px;
+}
+.sta_banner a.carousel-control{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.sta_banner a.carousel-control:hover{
+	text-decoration: none;
+}
+.sta_banner a.carousel-control-next{
+	right: 30px;
+}
+.sta_banner a.carousel-control-prev{
+	left: 30px;
+}
+@media (max-width: 575px){
+	.sta_banner ol{
+		display: none;
+	}
+}
